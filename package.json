@@ -1,0 +1,25 @@
+{
+  "name": "only-react-todo-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx babel src --out-dir dist --extensions \".js,.jsx\" && cp src/index.html dist/ && cp src/reset.css dist/ && serve dist",
+    "compile": "npx babel src -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.6",
+    "@babel/plugin-transform-arrow-functions": "^7.23.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.23.3",
+    "@babel/plugin-transform-react-jsx": "^7.23.4",
+    "babel-loader": "^9.1.3"
+  }
+}
